@@ -1,0 +1,40 @@
+---
+import i18next, { t } from "i18next";
+---
+    <footer>
+        <img src="/img/footerIgeco.webp" alt="Placa Igeco"/>
+        <h4>{t("footer.title-copyright")}</h4>
+        <nav>
+            <a href="/privacy-policy">{t("footer.nav1")}</a>
+            |  
+            <a href="/contact">{t("footer.nav2")}</a>
+        </nav>
+    </footer>
+
+    <style>
+        footer {
+            display: flex;
+            flex-direction: column;
+            margin: 5rem;
+            padding-bottom: 5rem;
+            color: black;
+            position: relative;
+            bottom: 0;
+            width: auto;
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+        }
+
+        a:hover {
+            color: var(--primary-color);
+        }
+
+        h4 {
+            border-bottom: 1px solid black;
+            border-top: 1px solid black;
+            padding: 1rem;
+        }
+    </style>

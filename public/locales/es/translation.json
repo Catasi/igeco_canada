@@ -1,0 +1,26 @@
+{
+    "site": {
+        "title": "IGECO | Canadá",
+        "description": "Producimos eventos de negocio"
+    },
+    "header": {
+        "nav1": "¿QUIÉNES SOMOS?",
+        "nav1-1": "NUESTRA HISTORIA",
+        "nav1-2": "NOSOTROS",
+        "nav1-3": "ÁREAS DE EXPERIENCIA",
+        "nav2": "NUESTROS EVENTOS",
+        "nav3": "MESSE EVENTS"
+    },
+    "footer": {
+        "title-copyright": "@ 2025 Italian German Exhibition Company",
+        "nav1": "Aviso de privacidad",
+        "nav2": "Contacto"
+    },
+    "privacy-policy": {
+        "bussiness": "Deutsche Messe",
+        "title": "Aviso de privacidad", 
+        "entreprise": "Italian German Exhibition Company Mexico, S.A. de C.V.",
+        "entreprise-text": "Italian German Exhibition Company",
+        "date": "Fecha de última fecha de modificación junio 2023."
+    }  
+}
