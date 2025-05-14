@@ -29,18 +29,18 @@ const currentLanguage = i18next.language;
 							{currentLanguage === 'es' ? (
 								<>
 								<h3>{event.title}</h3>
-								{"date" in event && "location" in event && "description" in event
+								{"date_es" in event && "location_es" in event && "description_es" in event
 									? 
 									<p>
-										{event.description} <br /><br />
-										{event.date} <br />
+										{event.description_es} <br /><br />
+										{event.date_es} <br />
 										{event.location}
 									</p>
 									:
 									<p>Próximamente...</p><br /><br /><br />
 								}
 								</>
-							) : (
+							) : currentLanguage === 'en' ? (
 								<>
 								<h3>{event.title}</h3>
 								{"date_en" in event && "location" in event && "description_en" in event
@@ -48,6 +48,20 @@ const currentLanguage = i18next.language;
 									<p>
 										{event.description_en} <br /><br />
 										{event.date_en} <br />
+										{event.location}
+									</p>
+									:
+									<p>Comming soon...</p><br /><br /><br />
+								}
+								</>
+							) : (
+								<>
+								<h3>{event.title}</h3>
+								{"date_fr" in event && "location" in event && "description_fr" in event
+									? 
+									<p>
+										{event.description_fr} <br /><br />
+										{event.date_fr} <br />
 										{event.location}
 									</p>
 									:
@@ -93,7 +107,6 @@ const currentLanguage = i18next.language;
 		font-size: 2.5rem;
 		font-weight: bold;
 		text-align: center;
-		
 	}
 
 	.banner :nth-child(2){

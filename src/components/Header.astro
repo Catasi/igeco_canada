@@ -3,12 +3,12 @@ import i18next, { t } from 'i18next'
 import { LanguageSelector } from 'astro-i18next/components'
 
 const lang = i18next.language
-const base = i18next.language === 'en' ? '' : `/${lang}`
+const base = i18next.language === 'en' ? '' :  `/${lang}`
 ---
 
 <header>
   <div class='menu-container'>
-    <a href='/' class='logo'>
+    <a href={`${base}/`} class='logo'>
       <img src='/img/deutschemesse.webp' alt='IGECO' width='300' />
     </a>
     <nav>
@@ -18,19 +18,30 @@ const base = i18next.language === 'en' ? '' : `/${lang}`
         </div>
         <ul class='dropdown-content'>
           <li>
-            <a href='/history'>{t('header.nav1-1')} </a>
+            <a href={`${base}/history`}>{t('header.nav1-1')} </a>
           </li>
-          <!-- <li><a href="about-us">{t("header.nav1-2")}</a></li>
-                <li><a href="areas-expertise">{t("header.nav1-3")}</a></li> -->
+          <!-- <li><a href={`${base}/about-us`}>{t("header.nav1-2")}</a></li>
+                <li><a href="{`${base}/areas-expertise`}">{t("header.nav1-3")}</a></li> -->
         </ul>
       </div>
       <div class='button-language'>
         {
-          i18next.language === 'en' ? (
-            <img src='/img/flag-us.svg' alt='us flag' />
-          ) : (
-            <img src='/img/flag-mexico.svg' alt='México flag' />
-          )
+            i18next.language === 'en' ? (
+              <img
+                src='/img/flag-us.svg'
+                alt='us flag'
+              />
+            ) : i18next.language === 'es' ? (
+              <img
+                src='/img/flag-mexico.svg'
+                alt='es flag'
+              />
+            ) : i18next.language === 'fr' ? (
+              <img
+                src='/img/flag-france.svg'
+                alt='fr flag'
+              />
+            ) : null
         }
         <LanguageSelector
           showFlag={true}

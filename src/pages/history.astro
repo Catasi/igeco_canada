@@ -28,7 +28,7 @@ changeLanguage("en");
             </div>
             <div class="col">
                 <figure>
-                    <img src="/img/history/deutsche-messe-alemania.webp" alt="Hannover Messe" width="100%" />
+                    <img src="/img/history/deutsche-messe-alemania.webp" alt="Hannover Messe" width="100%"/>
                     <figurecaption>{t("history.figure-caption1")}</figurecaption>
                 </figure>
             </div>
@@ -38,7 +38,7 @@ changeLanguage("en");
             <h3>{t("history.entreprise")}</h3>
             <div class="row">
                 <div class="col">
-                    <img src="/img/history/event1.webp" alt="Hannover Messe" width="100%" justify-content="center" />
+                    <img src="/img/history/event1.webp" alt="Hannover Messe" width="100%" class="cover-img" />
                 </div>
                 <div class="col">
                     <p>{t("history.p6")}</p>
@@ -85,24 +85,54 @@ changeLanguage("en");
 
     .container {
         background-color: #f8f9fa;
-    }
-
-    .container i, h3{
-        padding-left: 1.5rem;
+        padding: 1rem;
     }
 
     .row {
         display: flex;
         flex-wrap: wrap;
+        gap: 25px
     }
 
     .col {
         flex: 1 0 0%;
-        padding: 1.5rem;
+        object-fit: cover;
+    }
+
+    .cover-img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
     }
 
     .col-md-4 {
         flex: 0 0 auto;
         width: 33.33333333%;
+        display: flex;
+    }
+
+    @media (max-width: 1024px) {
+        section {
+            padding: 3rem 2rem 2rem 2rem;
+        }
+
+        .row {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .col-md-4 {
+            flex: 1 0 0%;
+            padding: 1rem;
+            width: auto;
+        }
+    }
+
+    @media (max-width: 768px) {
+        .col-md-4 {
+            flex: 1 0 0%;
+            padding: 1rem;
+            width: auto;
+        }
     }
 </style>

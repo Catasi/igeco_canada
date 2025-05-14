@@ -1,5 +1,8 @@
 ---
 import i18next, { t } from 'i18next'
+
+const lang = i18next.language
+const base = i18next.language === 'en' ? '' :  `/${lang}`
 ---
 
 <footer>
@@ -8,9 +11,9 @@ import i18next, { t } from 'i18next'
   </div>
   <h4>{t('footer.title-copyright')}</h4>
   <!-- <nav>
-            <a href="/privacy-policy">{t("footer.nav1")}</a>
+            <a href="{`${base}/privacy-policy`}">{t("footer.nav1")}</a>
             |  
-            <a href="/contact">{t("footer.nav2")}</a>
+            <a href="{`${base}/contact`}">{t("footer.nav2")}</a>
         </nav> -->
 </footer>
 
