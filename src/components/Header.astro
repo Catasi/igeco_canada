@@ -3,7 +3,7 @@ import i18next, { t } from "i18next";
 import { LanguageSelector } from "astro-i18next/components";
 
 const lang = i18next.language
-const base = i18next.language === 'es' ? '' : `/${lang}`
+const base = i18next.language === 'en' ? '' : `/${lang}`
 ---
 
 <header>
@@ -15,8 +15,8 @@ const base = i18next.language === 'es' ? '' : `/${lang}`
             <a><strong>{t("header.nav1")}</strong></a>
             <ul class="dropdown-content">
               <li><a href="history">{t("header.nav1-1")}</a></li>
-              <li><a href="about-us">{t("header.nav1-2")}</a></li>
-              <li><a href="areas-expertise">{t("header.nav1-3")}</a></li>
+              <!-- <li><a href="about-us">{t("header.nav1-2")}</a></li>
+              <li><a href="areas-expertise">{t("header.nav1-3")}</a></li> -->
             </ul>
         </div>
         <div class='button-language'>

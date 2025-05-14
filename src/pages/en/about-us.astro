@@ -7,7 +7,7 @@ changeLanguage("en");
 
 <Layout>
     <main>
-        <span>{t("about-us.bussiness")}</span>
+        <i>{t("about-us.bussiness")}</i>
         <h1>{t("about-us.title")}</h1>
         <p>{t("about-us.p1")}</p>
         <p>{t("about-us.p2")}</p>
@@ -16,17 +16,17 @@ changeLanguage("en");
     </main>
     <section>
         <div class="person">
-            <img src="/img/BERND-ICON.webp" alt="Director General Hannover Fairs México" />
+            <img src="/img/about-us/BERND-ICON.webp" alt="Director General Hannover Fairs México" />
             <strong>Bernd Rohde</strong>
             <p>{t("about-us.person1")}</p>
         </div>
         <div class="person">
-            <img src="/img/RODO-ICON.webp" alt="Rodolfo Carrizales" />
+            <img src="/img/about-us/RODO-ICON.webp" alt="Rodolfo Carrizales" />
             <strong>Rodolfo Carrizales</strong>
             <p>{t("about-us.person2")}</p>
         </div>
         <div class="person">
-            <img src="/img/AZUL-ICON.webp" alt="Azul Ogazón" />
+            <img src="/img/about-us/AZUL-ICON.webp" alt="Azul Ogazón" />
             <strong>Azul Ogazón</strong>
             <p>{t("about-us.person3")}</p>
         </div>
@@ -36,7 +36,7 @@ changeLanguage("en");
 <style>
     main {
         margin-top: 3rem;
-        padding: 3rem 6rem;
+        padding: 3rem 6rem 2rem 6rem;
         text-align: justify;
         background-color: #f8f9fa;
     }
@@ -47,20 +47,17 @@ changeLanguage("en");
         font-size: 40px;
     }
 
-    span {
-        font-style: italic;
-    }
-
     p {
         margin-bottom: 2rem;
     }
     
     section {
-        margin-top: 2rem;
+        margin: 3rem 2rem 0 2rem;
         display: flex;
         flex-direction: row;
         columns: 3;
         justify-content: center;
+        flex-wrap: wrap;
     }
 
     .person {
@@ -81,6 +78,20 @@ changeLanguage("en");
     .col-md-3 {
         flex: 0 0 auto;
         width: 25%;
+    }
+
+    @media (max-width: 600px) {
+    section {
+        display: block;
+        column-count: 1;
+        column-gap: 1rem;
+    }
+
+    .person {
+        break-inside: avoid;
+        margin-bottom: 2rem;
+    }
+    
     }
 }
 </style>

@@ -1,15 +1,15 @@
 /** @type {import('astro-i18next').AstroI18nextConfig} */
 export default {
-  defaultLocale: "es",
+  defaultLocale: "en",
   locales: ["es", "en"],
   i18nextServer: {
     backend: {
-      loadPath: './public/locales/{{lng}}/{{ns}}.json',
+      loadPath: "./public/locales/{{lng}}/{{ns}}.json",
       requestOptions: {
         cache: {
-          mode: "no-store"
-        }
-      }
-    }     
-  }  
+          mode: "no-store",
+        },
+      },
+    },
+  },
 };
