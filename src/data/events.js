@@ -4,8 +4,8 @@ export const events = [
   {
     title: "Electricity Transformation Canada",
     description:
-      "Evento para promover la transición a la energía renovable en Canadá",
-    description_en: "Event to promote renewable energy transition in Canada",
+      "El negocio de la energía, transformado.",
+    description_en: "The business of energy, transformed.",
     date: "6 al 8 de Octubre de 2026",
     date_en: "October 6-8, 2026",
     location: "Enercare Centre, Toronto, Ontario, Canadá",

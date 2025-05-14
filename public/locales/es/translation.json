@@ -11,6 +11,11 @@
     "nav2": "NUESTROS EVENTOS",
     "nav3": "MESSE EVENTS"
   },
+  "home":{
+        "title": "Impulsando la Transición",        
+        "date": "Únase a nosotros del 6 al 8 de octubre, Enercare Centre, Toronto, Ontario",
+        "register": "¡La inscripción ya está abierta!"
+    },
   "footer": {
     "title-copyright": "@ 2025 Italian German Exhibition Company",
     "nav1": "Aviso de privacidad",

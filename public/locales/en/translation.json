@@ -11,6 +11,11 @@
         "nav2": "OUR EVENTS",
         "nav3": "MESSE EVENTS"
     },
+    "home":{
+        "title": "Powering the Transition",
+        "date": "Join us October 6-8, Enercare Centre, Toronto, Ontario",
+        "register": "Registration is now open!"
+    },
     "footer": {
         "title-copyright": "@ 2025 Italian German Exhibition Company",
         "nav1": "Privacy Policy",

@@ -1,143 +1,149 @@
 ---
-import i18next, { t } from "i18next";
-import { LanguageSelector } from "astro-i18next/components";
+import i18next, { t } from 'i18next'
+import { LanguageSelector } from 'astro-i18next/components'
 
 const lang = i18next.language
 const base = i18next.language === 'en' ? '' : `/${lang}`
 ---
 
 <header>
-    <a href="/" class="logo">
-        <img src="/img/deutschemesse.webp" alt="IGECO" width="300" />
+  <div class='menu-container'>
+    <a href='/' class='logo'>
+      <img src='/img/deutschemesse.webp' alt='IGECO' width='300' />
     </a>
     <nav>
-        <div class="dropdown">
-            <a><strong>{t("header.nav1")}</strong></a>
-            <ul class="dropdown-content">
-              <li><a href="history">{t("header.nav1-1")}</a></li>
-              <!-- <li><a href="about-us">{t("header.nav1-2")}</a></li>
-              <li><a href="areas-expertise">{t("header.nav1-3")}</a></li> -->
-            </ul>
+      <div class='dropdown'>
+        <div>
+          <strong>{t('header.nav1')}</strong>
         </div>
-        <div class='button-language'>
-            {
-              i18next.language === 'en' ? (
-                <img
-                  src='/img/flag-us.svg'
-                  alt='us flag'
-                />
-              ) : (
-                <img
-                  src='/img/flag-mexico.svg'
-                  alt='México flag'
-                />
-              )
-            }
-            <LanguageSelector
-              showFlag={true}
-              aria-label='Select language'
-              class='languaje-selector'
-            />
-        </div>
+        <ul class='dropdown-content'>
+          <li>
+            <a href='/history'>{t('header.nav1-1')} </a>
+          </li>
+          <!-- <li><a href="about-us">{t("header.nav1-2")}</a></li>
+                <li><a href="areas-expertise">{t("header.nav1-3")}</a></li> -->
+        </ul>
+      </div>
+      <div class='button-language'>
+        {
+          i18next.language === 'en' ? (
+            <img src='/img/flag-us.svg' alt='us flag' />
+          ) : (
+            <img src='/img/flag-mexico.svg' alt='México flag' />
+          )
+        }
+        <LanguageSelector
+          showFlag={true}
+          aria-label='Select language'
+          class='languaje-selector'
+        />
+      </div>
     </nav>
-    
+  </div>
 </header>
 
-
 <style>
-    
-    header {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 1rem;
-        padding-left: 5rem;
-        padding-right: 5rem;
-        background-color: var(--primary-color);
-        color: white;
-        height: 50px;
-    }  
+  header {
+    padding: 20px;
+    background-color: #07439c;
+  }
 
-    a {
-        text-decoration: none;
-        color: white;
-        margin-left: 10px;
-        margin-right: 10px;
-        margin: 0 15px;
-        position: relative;
+  .menu-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+  }
+
+  a {
+    text-decoration: none;
+    color: white;
+    position: relative;
+    display: flex;
+    justify-items: center;
+  }
+
+  nav {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    align-items: center;
+  }
+
+  .dropdown {
+    text-align: center;
+    position: relative;
+    display: inline-block;
+  }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #ffffff;
+    min-width: 220px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    padding: 1rem;
+    margin: 0;
+    z-index: 1;
+    border-radius: 2px;
+  }
+
+  .dropdown-content li {
+    list-style: none;
+  }
+
+  .dropdown-content li:last-child {
+    border-bottom: none;
+  }
+
+  .dropdown-content li a {
+    display: block;
+    padding: 5px 15px;
+    color: black;
+  }
+
+  .dropdown-content li a:hover {
+    background-color: #d0d0d0;
+  }
+
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+  .button-language {
+    display: flex;
+    align-items: center;
+  }
+
+  .button-language img {
+    height: 2rem;
+    width: 2rem;
+    border-radius: 9999px;
+    margin-right: 0.5rem;
+  }
+
+  .languaje-selector {
+    display: block;
+    width: 7rem;
+    padding: 0.625rem;
+    border-radius: 0.5rem;
+    background-color: rgb(255, 255, 255);
+    border-color: rgb(75 85 99);
+    color: black;
+  }
+
+  @media (min-width: 768px) {
+    .md\:order-2 {
+      order: 2;
     }
+  }
 
-    nav {
-        display: flex; 
-        justify-content: space-between;
-
-        align-items: center;
+  @media (max-width: 693px) {
+    .menu-container {
+      justify-content: center;
     }
-
-    .dropdown {
-        position: relative;
-        display: inline-block;
-    }
-
-    .dropdown-content {
-        display: none;
-        position: absolute;
-        background-color: #ffffff;
-        min-width: 220px;
-        box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
-        padding: 1rem;
-        margin: 0;
-        z-index: 1;
-        border-radius: 2px;
-    }
-
-    .dropdown-content li {
-        list-style: none;
-    }
-
-    .dropdown-content li:last-child {
-        border-bottom: none;
-    }
-
-    .dropdown-content li a {
-        display: block;
-        padding: 5px 15px;
-        color: black;
-    }
-
-    .dropdown-content li a:hover {
-        background-color: #d0d0d0;
-    }
-
-    .dropdown:hover .dropdown-content {
-        display: block;
-    }
-
-    .button-language{
-        display: flex;
-        align-items: center; 
-    }
-
-    .button-language img{
-        height: 2rem;
-        width: 2rem;
-        border-radius: 9999px;
-        margin-right: 0.5rem
-    }
-
-    .languaje-selector{
-        display: block;
-        width: 7rem;
-        padding: 0.625rem;
-        border-radius: 0.5rem;
-        background-color: rgb(255, 255, 255);
-        border-color: rgb(75 85 99);
-        color: black;
-    }
-
-    @media (min-width: 768px) {
-        .md\:order-2 {
-            order: 2;
-        }
-    }
+  }
 </style>

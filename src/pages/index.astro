@@ -1,5 +1,5 @@
 ---
-import i18next, { changeLanguage } from "i18next";
+import i18next, { t, changeLanguage } from "i18next";
 import { events } from "../data/events.js";
 import Layout from "../layouts/Layout.astro";
 
@@ -11,7 +11,14 @@ const currentLanguage = i18next.language;
 <Layout>
 	<main>
 		<a href="https://electricity-transformation.ca/register/" target="_blank">
-			<img src="/img/home1.png" alt="Electricity Transformation Canada 2025" width="100%" />
+			<div class="banner">
+				<p>
+					Electricity Transformation Canada
+				</p>
+				<p>{t('home.title')}</p>
+				<p>{t('home.date')}</p>
+				<p>{t('home.register')}</p>
+			</div>
 		</a>
 		<section>
 			{events.map(event => (
@@ -60,9 +67,12 @@ const currentLanguage = i18next.language;
 	main {
 		margin: 5rem;
 	}
-
+	main>a{
+		text-decoration: none;
+		color: inherit;
+	}
 	section {
-		padding-top: 5rem;
+		padding: 5rem 5rem;
 		display: flex;
 		flex-direction: row;
 		columns: 3;
@@ -71,6 +81,33 @@ const currentLanguage = i18next.language;
 		flex-wrap: wrap;
 		justify-content: center;
 	}
+
+	.banner{
+		background-image: url('/img/fondo_Electricity_Transf_Ca.png');
+		background-repeat: no-repeat;
+		background-position: top right;
+		background-size: cover;
+		background-attachment: fixed;
+		padding: 50px 10px;
+		color: white;
+		font-size: 2.5rem;
+		font-weight: bold;
+		text-align: center;
+		
+	}
+
+	.banner :nth-child(2){
+		color: #355282;
+	}
+
+	.banner :nth-child(3){
+		font-size: 20px;
+	}
+
+	.banner :nth-child(4){
+		font-size: 20px;
+	}
+
 
 	.tarjeta-link {
 		display: inline-block;
@@ -114,13 +151,17 @@ const currentLanguage = i18next.language;
 	}
 
 	@media (max-width: 768px) {
-		.tarjeta {
-		width: 700px;
-		height: auto;
-	}
+		.tarjeta {	
+			width: 320px;	
+			height: auto;
+		}
 
-	.tarjeta a {
-		height: 100%;
-		width: 100%;
+		.tarjeta a {
+			height: 100%;
+			width: 100%;
+		}
+		main {
+			margin: 0;
+		}
 	}
 </style>
