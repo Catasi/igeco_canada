@@ -9,6 +9,12 @@
       "nav1-2" : "QUI SOMMES-NOUS?",
       "nav1-3" : "DOMAINES D'EXPERTISE",
       "nav2" : "NOS ÉVÉNEMENTS",
+      "nav2-1": "ÉVÉNEMENTS LOCAUX",
+        "nav2-1-1": "ELECTRICITY TRANSFORMATION CANADA",
+        "nav2-2": "ÉVÉNEMENTS INTERNATIONAUX",
+        "nav2-2-1": "RE+ MEXICO",
+        "nav2-2-2": "INDUSTRIAL TRANSFORMATION MEXICO",
+        "nav2-2-3": "AMERICA'S MOBILITY OF THE FUTURE",
       "nav3" : "MESSE EVENTS"
     },
     "home" :{
@@ -24,11 +30,11 @@
     "about-us" : {
       "bussiness" : "Deutsche Messe",
       "title" : "NOUS",
-      "p1" : "Italian German Exhibition Company Mexico est une filiale de Deutsche Messe AG, entreprise du gouvernement allemand leader dans l'organisation de foires spécialisées dans les secteurs des biens d'équipement, des ressources humaines et des biens de consommation." ,
+      "p1" : "Italian German Exhibition Company Canada est une filiale de Deutsche Messe AG, entreprise du gouvernement allemand leader dans l'organisation de foires spécialisées dans les secteurs des biens d'équipement, des ressources humaines et des biens de consommation." ,
       "p2" : "Notre portefeuille d'événements comprend les salons leaders dans leurs secteurs respectifs, tels que Hannover Messe (Industrie 4.0), IAA (transport) et Agritetechnica (agro-industrie), entre autres." ,
-      "p3" : "Italian German Exhibition Company Mexico a été fondée au Mexique en 2016. Sa mission est de contribuer au développement économique des entreprises par l'organisation de foires et de plateformes qui promeuvent les affaires B2B, en mettant l'accent sur les résultats, la qualité et l'excellence." ,
-      "p4" : "Sa vision est de devenir la société leader en Amérique latine dans l'organisation de foires et plateformes d'affaires B2B.",
-      "person1" : "Directeur général de Hannover Fairs Mexico",
+      "p3" : "Italian German Exhibition Company Canada a été fondée en 2016. Sa mission est de contribuer au développement économique des entreprises par l'organisation de foires et de plateformes qui promeuvent les affaires B2B, en mettant l'accent sur les résultats, la qualité et l'excellence." ,
+      "p4" : "Sa vision est de devenir la société leader en Amérique du Nord dans l'organisation de foires et plateformes d'affaires B2B.",
+      "person1" : "Directeur général de Hannover Fairs",
       "person2" : "Directeur des finances et des ressources humaines",
       "person3" : "Deputy Manager IGECO"
     },

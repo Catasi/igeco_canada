@@ -9,6 +9,12 @@
         "nav1-2": "ABOUT US",
         "nav1-3": "AREAS OF EXPERTISE",
         "nav2": "OUR EVENTS",
+        "nav2-1": "LOCAL EVENTS",
+        "nav2-1-1": "ELECTRICITY TRANSFORMATION CANADA",
+        "nav2-2": "INTERNATIONAL EVENTS",
+        "nav2-2-1": "RE+ MEXICO",
+        "nav2-2-2": "INDUSTRIAL TRANSFORMATION MEXICO",
+        "nav2-2-3": "AMERICA'S MOBILITY OF THE FUTURE",
         "nav3": "MESSE EVENTS"
     },
     "home":{
@@ -24,11 +30,11 @@
     "about-us": {
       "bussiness": "Deutsche Messe",
       "title": "ABOUT US",
-      "p1": "IGECO, Italian German Exhibition Company is a joint venture between Italian Exhibition Group SpA and Deutsche Messe AG, a German government-owned company, leader in the organization of specialized trade fairs in the capital goods, human resources and consumer goods sectors.",
+      "p1": "IGECO, Italian German Exhibition Company Canada is a joint venture between Italian Exhibition Group SpA and Deutsche Messe AG, a German government-owned company, leader in the organization of specialized trade fairs in the capital goods, human resources and consumer goods sectors.",
       "p2": "Our portfolio of events includes the leading trade fairs in their respective sectors, such as Hannover Messe (Industry 4.0), IAA (transportation) and Agritetechnica (agribusiness), among others.",
-      "p3": "Italian German Exhibition Company Mexico was founded in Mexico in 2016. Its mission is to contribute to the economic development of companies through the organization of fairs and platforms that promote B2B business, with a focus on results, quality and excellence.",
-      "p4": "Its vision is to become the leading company in Latin America in the organization of fairs and B2B business platforms.",
-      "person1": "General Director Hannover Fairs Mexico", 
+      "p3": "Italian German Exhibition Company Canada was founded in 2016. Its mission is to contribute to the economic development of companies through the organization of fairs and platforms that promote B2B business, with a focus on results, quality and excellence.",
+      "p4": "Its vision is to become the leading company in North America in the organization of fairs and B2B business platforms.",
+      "person1": "General Director Hannover Fairs", 
       "person2": "Director of Finance and Human Resources",
       "person3": "Deputy Manager IGECO"
     },

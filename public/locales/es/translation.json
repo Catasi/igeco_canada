@@ -9,6 +9,12 @@
     "nav1-2": "NOSOTROS",
     "nav1-3": "ÁREAS DE EXPERIENCIA",
     "nav2": "NUESTROS EVENTOS",
+    "nav2-1": "EVENTOS LOCALES",
+    "nav2-1-1": "ELECTRICITY TRANSFORMATION CANADA",
+    "nav2-2": "EVENTOS INTERNACIONALES",
+    "nav2-2-1": "RE+ MEXICO",
+    "nav2-2-2": "INDUSTRIAL TRANSFORMATION MEXICO",
+    "nav2-2-3": "AMERICA'S MOBILITY OF THE FUTURE",
     "nav3": "MESSE EVENTS"
   },
   "home":{
@@ -24,11 +30,11 @@
   "about-us": {
     "bussiness": "Deutsche Messe",
     "title": "NOSOTROS",
-    "p1": "Italian German Exhibition Company Mexico es una subsidiaria de Deutsche Messe AG, empresa del gobierno alemán líder en la organización de ferias especializadas en los sectores de bienes de capital, recursos humanos y bienes de consumo.",
+    "p1": "Italian German Exhibition Company Canadá es una subsidiaria de Deutsche Messe AG, empresa del gobierno alemán líder en la organización de ferias especializadas en los sectores de bienes de capital, recursos humanos y bienes de consumo.",
     "p2": "En nuestro portafolio de eventos se encuentran las ferias líderes en sus respectivos sectores, como Hannover Messe (Industria 4.0), IAA (transporte) y Agritetechnica (agroindustria), entre otras.",
-    "p3": "Italian German Exhibition Company Mexico se fundó en México en 2016. Su misión es contribuir al desarrollo económico de las empresas a través de la organización de ferias y plataformas que promuevan los negocios B2B, con un enfoque en resultados, calidad y excelencia.",
-    "p4": "Su visión es convertirse en la compañía líder en Latinoamérica en la organización de ferias y plataformas de negocios B2B.",
-    "person1": "Director General Hannover Fairs México",
+    "p3": "Italian German Exhibition Company Canadá se fundó en 2016. Su misión es contribuir al desarrollo económico de las empresas a través de la organización de ferias y plataformas que promuevan los negocios B2B, con un enfoque en resultados, calidad y excelencia.",
+    "p4": "Su visión es convertirse en la compañía líder en Norteamérica en la organización de ferias y plataformas de negocios B2B.",
+    "person1": "Director General Hannover Fairs",
     "person2": "Director de Finanzas y Recursos Humanos",
     "person3": "Deputy Manager IGECO"
   },
