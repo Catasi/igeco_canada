@@ -6,21 +6,26 @@ const base = i18next.language === "en" ? "" : `/${lang}`;
 ---
 
 <footer>
-  <div>
+  <div class="footer-blue">
     <img src="/img/deutschemesse.webp" alt="IGECO" width="300" />
   </div>
-  <div class="w-full lg:pe-10">
-    <iframe
-      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2886.6688046900904!2d-79.39159872405678!3d43.65505857110196!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b34c8d7130f7d%3A0x2e6f347fe0221eef!2s480%20University%20Ave%20Suite%201500%2C%20Toronto%2C%20ON%20M5G%201V2%2C%20Canad%C3%A1!5e0!3m2!1ses-419!2smx!4v1747323800962!5m2!1ses-419!2smx"
-      class="w-full h-96"
-      style="border:0;"
-      allowfullscreen=""
-      loading="lazy"
-      referrerpolicy="no-referrer-when-downgrade"></iframe>
-    <p>
-      <strong>ITALIAN GERMAN EXHIBITION COMPANY CANADA</strong>
-      <br />Centro Banamex, Ciudad de México
-    </p>
+  <div class="mt-5 mb-5 row footer-map">
+    <div class="my-auto col-md-4">
+      <p>
+        <strong>DRONE INNOVATOR FORUM MX</strong>
+        <br />480 Univeristy Ave., Suite 1500.
+        <br />Toronto, Ontario M5G 1V2 Canada.
+      </p>
+    </div>
+    <div class="col-md-8 map">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2886.6688046900904!2d-79.39159872405678!3d43.65505857110196!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b34c8d7130f7d%3A0x2e6f347fe0221eef!2s480%20University%20Ave%20Suite%201500%2C%20Toronto%2C%20ON%20M5G%201V2%2C%20Canad%C3%A1!5e0!3m2!1ses-419!2smx!4v1747325466124!5m2!1ses-419!2smx"
+        style="border:0;"
+        class="w-full h-96"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
   </div>
   <h4>{t("footer.title-copyright")}</h4>
   <!-- <nav>
@@ -41,11 +46,22 @@ const base = i18next.language === "en" ? "" : `/${lang}`;
     bottom: 0;
     width: auto;
   }
-  footer > div {
+  .footer-map {
+    margin: 1%;
+    display: flex;
+  }
+  .map {
+    width: 80%;
+    padding: 2%;
+  }
+  .footer-blue {
     background-color: #07439c;
-    display: grid;
+    display: flex;
     place-items: center;
     padding: 10px;
+  }
+  iframe {
+    width: 100%;
   }
   a {
     text-decoration: none;
@@ -65,6 +81,16 @@ const base = i18next.language === "en" ? "" : `/${lang}`;
   @media screen and (max-width: 768px) {
     footer {
       margin: 0;
+    }
+  }
+  @media screen and (max-width: 534px) {
+    .footer-map {
+      display: grid;
+      margin: auto;
+      padding: auto;
+      width: auto;
+      align-items: center;
+      justify-items: center;
     }
   }
 </style>
