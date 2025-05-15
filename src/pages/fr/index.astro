@@ -1,11 +1,9 @@
 ---
 import i18next, { t, changeLanguage } from "i18next";
-import { events } from "../../data/events.js";
 import Layout from "../../layouts/Layout.astro";
+import EventsCard from "../../components/EventsCard.astro";
 
 changeLanguage("fr");
-
-const currentLanguage = i18next.language;
 ---
 
 <Layout>
@@ -20,60 +18,7 @@ const currentLanguage = i18next.language;
 				<p>{t('home.register')}</p>
 			</div>
 		</a>
-		<section>
-			{events.map(event => (
-				<a href={event.link} target="_blank" class="tarjeta-link">
-					<div class="tarjeta">
-						<img src={event.image} alt={event.title} width="100%" />
-						<div class="contenido">
-							{currentLanguage === 'es' ? (
-								<>
-								<h3>{event.title}</h3>
-								{"date_es" in event && "location_es" in event && "description_es" in event
-									? 
-									<p>
-										{event.description_es} <br /><br />
-										{event.date_es} <br />
-										{event.location}
-									</p>
-									:
-									<p>Próximamente...</p><br /><br /><br />
-								}
-								</>
-							) : currentLanguage === 'en' ? (
-								<>
-								<h3>{event.title}</h3>
-								{"date_en" in event && "location" in event && "description_en" in event
-									? 
-									<p>
-										{event.description_en} <br /><br />
-										{event.date_en} <br />
-										{event.location}
-									</p>
-									:
-									<p>Comming soon...</p><br /><br /><br />
-								}
-								</>
-							) : (
-								<>
-								<h3>{event.title}</h3>
-								{"date_fr" in event && "location" in event && "description_fr" in event
-									? 
-									<p>
-										{event.description_fr} <br /><br />
-										{event.date_fr} <br />
-										{event.location}
-									</p>
-									:
-									<p>Comming soon...</p><br /><br /><br />
-								}
-								</>
-							)}
-						</div>
-					</div>
-				</a>
-			))}
-		</section>
+		<EventsCard />
 	</main>
 </Layout>
 
@@ -85,17 +30,6 @@ const currentLanguage = i18next.language;
 		text-decoration: none;
 		color: inherit;
 	}
-	section {
-		padding: 5rem 5rem;
-		display: flex;
-		flex-direction: row;
-		columns: 3;
-		column-gap: 10rem;
-		row-gap: 5rem;
-		flex-wrap: wrap;
-		justify-content: center;
-	}
-
 	.banner{
 		background-image: url('/img/fondo_Electricity_Transf_Ca.png');
 		background-repeat: no-repeat;
@@ -121,58 +55,7 @@ const currentLanguage = i18next.language;
 		font-size: 20px;
 	}
 
-
-	.tarjeta-link {
-		display: inline-block;
-		text-decoration: none;
-		color: inherit;
-	}
-
-	.tarjeta-link:hover .tarjeta {
-		transform: scale(1.03);
-		transition: transform 0.3s ease-in-out;
-	}
-
-	.tarjeta {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		justify-content: center;
-		width: 330px;
-		height: 500px;
-		color: black;
-		box-shadow: 1px 1px 50px #a3a3a3;
-		border-radius: 5px;
-		overflow: hidden;
-	}
-
-	.tarjeta a {
-		height: 30cap;
-	}
-
-	.tarjeta img {
-		width: 100%;
-		height: 100%;
-		border-radius: 5px 5px 0 0;
-	}
-
-	.tarjeta .contenido {
-		padding-left: 2rem;
-		padding-right: 2rem;
-		padding-bottom: 1rem;
-		text-align: center;
-	}
-
 	@media (max-width: 768px) {
-		.tarjeta {	
-			width: 320px;	
-			height: auto;
-		}
-
-		.tarjeta a {
-			height: 100%;
-			width: 100%;
-		}
 		main {
 			margin: 0;
 		}
