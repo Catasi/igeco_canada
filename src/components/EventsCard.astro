@@ -14,7 +14,7 @@ const currentLanguage = i18next.language;
                     {currentLanguage === 'es' ? (
                         <>
                         <h3>{event.title}</h3>
-                        {"date_es" in event && "location_es" in event && "description_es" in event
+                        {"date_es" in event && "location" in event && "description_es" in event
                             ? 
                             <p>
                                 {event.description_es} <br /><br />
