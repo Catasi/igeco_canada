@@ -11,6 +11,7 @@
   },
   "dependencies": {
     "astro": "^5.7.12",
-    "astro-i18next": "^1.0.0-beta.21"
+    "astro-i18next": "^1.0.0-beta.21",
+    "i18n": "^0.15.1"
   }
 }

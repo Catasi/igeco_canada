@@ -17,11 +17,15 @@
     "nav2-2-3": "AMERICA'S MOBILITY OF THE FUTURE",
     "nav3": "MESSE EVENTS"
   },
-  "home":{
-        "title": "Impulsando la Transición",        
-        "date": "Únase a nosotros del 6 al 8 de octubre, Enercare Centre, Toronto, Ontario",
-        "register": "¡La inscripción ya está abierta!"
-    },
+  "home": {
+    "title": "Impulsando la Transición",
+    "date": "Únase a nosotros del 6 al 8 de octubre, Enercare Centre, Toronto, Ontario",
+    "register": "¡La inscripción ya está abierta!"
+  },
+  "titles": {
+    "title1": "EVENTOS NACIONALES",
+    "title2": "EVENTOS INTERNACIONALES"
+  },
   "footer": {
     "title-copyright": "@ 2025 Italian German Exhibition Company",
     "nav1": "Aviso de privacidad",

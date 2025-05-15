@@ -8,16 +8,19 @@ changeLanguage("fr");
 
 <Layout>
 	<main>
-		<a href="https://electricity-transformation.ca/register/" target="_blank">
+		<h2>{t("titles.title1")}</h2>
+		<a
+			href="https://electricity-transformation.ca/register/"
+			target="_blank"
+		>
 			<div class="banner">
-				<p>
-					Electricity Transformation Canada
-				</p>
-				<p>{t('home.title')}</p>
-				<p>{t('home.date')}</p>
-				<p>{t('home.register')}</p>
+				<p>Electricity Transformation Canada</p>
+				<p>{t("home.title")}</p>
+				<p>{t("home.date")}</p>
+				<p>{t("home.register")}</p>
 			</div>
 		</a>
+		<h2>{t("titles.title2")}</h2>
 		<EventsCard />
 	</main>
 </Layout>
@@ -26,12 +29,12 @@ changeLanguage("fr");
 	main {
 		margin: 5rem;
 	}
-	main>a{
+	main > a {
 		text-decoration: none;
 		color: inherit;
 	}
-	.banner{
-		background-image: url('/img/fondo_Electricity_Transf_Ca.png');
+	.banner {
+		background-image: url("/img/fondo_Electricity_Transf_Ca.png");
 		background-repeat: no-repeat;
 		background-position: top right;
 		background-size: cover;
@@ -43,18 +46,25 @@ changeLanguage("fr");
 		text-align: center;
 	}
 
-	.banner :nth-child(2){
+	.banner :nth-child(2) {
 		color: #355282;
 	}
 
-	.banner :nth-child(3){
+	.banner :nth-child(3) {
 		font-size: 20px;
 	}
 
-	.banner :nth-child(4){
+	.banner :nth-child(4) {
 		font-size: 20px;
 	}
-
+	h2 {
+		font-size: 250%;
+		font-family: sans-serif;
+		font-weight: bold;
+		display: flex;
+		margin-bottom: 1%;
+		border-bottom: solid black 3px;
+	}
 	@media (max-width: 768px) {
 		main {
 			margin: 0;
