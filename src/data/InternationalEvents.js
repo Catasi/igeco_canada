@@ -4,7 +4,7 @@ export const events = [
     description_es:
       "La feria del futuro energético renovable de México y América Latina",
     description_en:
-      "America Lanita and Mexico's future renewable energy festival",
+      "America Lalina and Mexico's future renewable energy festival",
     description_fr:
       "La fête du futur énergie renouvelable de México et Amérique latine",
     date_es: "14 al 16 de Abril de 2026",
@@ -22,7 +22,7 @@ export const events = [
     date_es: "11 al 13 de Noviembre de 2025",
     date_en: "November 11-13, 2025",
     date_fr: "Du 11 au 13 novembre 2025",
-    location: "Centro CityBanamex, CDMX, México",
+    location: "Centro Banamex, CDMX, México",
     image: "/img/events/Logo_ITM.webp",
     link: "https://industrialtransformation.mx",
   },
@@ -37,7 +37,7 @@ export const events = [
     date_es: "11 al 13 de Noviembre de 2025",
     date_en: "November 11-13, 2025",
     date_fr: "Du 11 au 13 novembre 2025",
-    location: "Centro CityBanamex, CDMX, México",
+    location: "Centro Banamex, CDMX, México",
     image: "/img/events/amof2025logo.webp",
     link: "https://amofexpo.igeco.mx",
   },
