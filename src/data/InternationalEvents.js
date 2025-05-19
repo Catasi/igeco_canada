@@ -4,7 +4,7 @@ export const events = [
     description_es:
       "La feria del futuro energético renovable de México y América Latina",
     description_en:
-      "America Lalina and Mexico's future renewable energy festival",
+      "America Latina and Mexico's future renewable energy festival",
     description_fr:
       "La fête du futur énergie renouvelable de México et Amérique latine",
     date_es: "14 al 16 de Abril de 2026",
