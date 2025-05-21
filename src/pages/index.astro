@@ -1,5 +1,7 @@
 ---
 import i18next, { t, changeLanguage } from "i18next";
+import BuyersProfessional from "../components/BuyersProfessional.astro";
+
 import Layout from "../layouts/Layout.astro";
 import EventsCard from "../components/OurEventsCard.astro";
 import Events from "../components/Events.astro";
@@ -32,8 +34,15 @@ changeLanguage("en");
 		</div>
 		<h2>{t("home.title_2")}</h2>
 		<EventsCard />
+<<<<<<< HEAD
 		<h2>{t("home.title_3")}</h2>
 		<Events events={events} isLeftToRight={true}/>
+		<BuyersProfessional />
+=======
+		<h2>Conoce más eventos</h2>
+		<Events events={events} isLeftToRight={true} />
+		
+>>>>>>> c06a8f48028b74b7590093c2991fe77ba9166bf0
 	</main>
 </Layout>
 
@@ -70,7 +79,7 @@ changeLanguage("en");
 		font-size: 250%;
 		font-family: sans-serif;
 		font-weight: bold;
-		text-align: center;;
+		text-align: center;
 		margin-bottom: 1%;
 		border-bottom: solid #355282 3px;
 		color: #355282;
