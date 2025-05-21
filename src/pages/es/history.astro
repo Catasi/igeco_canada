@@ -9,40 +9,45 @@ changeLanguage("es");
     <section>
         <div class="row">
             <div class="col-md-4">
-                <img src="/img/history/Exportmesse1947.webp" alt="Historia" width="100%" />
+                <img src="/img/history/Hannover-Messe-2023.jpeg" alt="Hannover Messe 2023" width="100%" />
             </div>
             <div class="col">
                 <i>{t("about-us.bussiness")}</i>
                 <h1>{t("history.title")}</h1>
-                <p>{t("history.p1")}</p>
-                <p>{t("history.p2")}</p>
+                <p set:html={t("history.p1")}></p><br>
+                <p set:html={t("history.p2")}></p><br>
             </div>
         </div>
-        <p>{t("history.p3")}</p>
-        <p>{t("history.p4")}</p>
-        <div class="row">
-            <div class="col">
+        <p class="mt-5">{t("history.p3")}</p><br>
+        <p>{t("history.p4")}</p><br>
+        <p>{t("history.p5")}</p><br>
+        <div class="row-2">
+            <div class="container">
                 <i>{t("history.about")}</i>
                 <h2>{t("history.bussiness")}</h2>
-                <p>{t("history.p5")}</p>
-            </div>
-            <div class="col">
-                <figure>
-                    <img src="/img/history/deutsche-messe-alemania.webp" alt="Hannover Messe" width="100%"/>
-                    <figurecaption>{t("history.figure-caption1")}</figurecaption>
-                </figure>
-            </div>
-        </div>
-        <div class="container">
-            <i>{t("history.about")}</i>
-            <h3>{t("history.entreprise")}</h3>
-            <div class="row">
-                <div class="col">
-                    <img src="/img/history/event1.webp" alt="Hannover Messe" width="100%" class="cover-img" />
+                <div class="row-3">
+                    <div class="col">
+                        <figure>
+                            <img src="/img/history/deutsche-messe-alemania.webp" alt="Hannover Messe" width="100%"/>
+                            <figurecaption>{t("history.figure-caption1")}</figurecaption>
+                        </figure>
+                    </div>
+                    <div class="col px-2">
+                        <p>{t("history.p6")}</p>
+                    </div>
                 </div>
-                <div class="col">
-                    <p>{t("history.p6")}</p>
-                    <p>{t("history.p7")}</p>
+            </div>
+            <div class="container">
+                <i>{t("history.about")}</i>
+                <h3>{t("history.entreprise")}</h3>
+                <div class="row-3">
+                    <div class="col">
+                        <img src="/img/history/event1.webp" alt="Hannover Messe" width="100%" class="cover-img" />
+                    </div>
+                    <div class="col px-2">
+                        <p>{t("history.p7")}</p><br>
+                        <p>{t("history.p8")}</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -94,6 +99,18 @@ changeLanguage("es");
         gap: 25px
     }
 
+    .row-2 {
+        display: flex;
+        flex-direction: row;
+        gap: 25px
+    }
+
+    .row-3 {
+        display: flex;
+        flex-direction: column;
+        gap: 25px
+    }
+
     .col {
         flex: 1 0 0%;
         object-fit: cover;
@@ -102,12 +119,12 @@ changeLanguage("es");
     .cover-img {
         width: 100%;
         height: 100%;
-        object-fit: cover;
+        object-fit: hover;
     }
 
     .col-md-4 {
         flex: 0 0 auto;
-        width: 33.33333333%;
+        width: 50%;
         display: flex;
     }
 

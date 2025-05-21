@@ -9,10 +9,13 @@ interface Props {
     title?: string
     subtitle?: string
     subtitle_en?: string
+    subtitle_fr?: string
     description?: string
     description_en?: string
+    description_fr?: string
     date?: string
     date_en?: string
+    date_fr?: string
     location?: string
     logo?: string
   }>
@@ -59,17 +62,18 @@ import i18next from 'i18next'
                   <p class='mt-5 text-lg font-bold'>
                     {i18next.language === 'es'
                       ? partner.subtitle
-                      : partner.subtitle_en}
+                      : (i18next.language === 'fr' ? partner.subtitle_fr : partner.subtitle_en)}
                   </p>
                   <p class='mt-5'>
                     {i18next.language === 'es'
                       ? partner.description
-                      : partner.description_en}
+                      : (i18next.language === 'fr' ? partner.description_fr : partner.description_en)}
                   </p>
                 </div>
                 <div class='mt-5 flex justify-center items-center gap-5 text-center'>
                   <span class='border-[0.5px] border-gray-800 py-2 w-full rounded-xl bg-[#121212]'>
-                    {i18next.language === 'es' ? partner.date : partner.date_en}
+                    {i18next.language === 'es' ? partner.date : 
+                      (i18next.language === 'fr' ? partner.date_fr : partner.date_en)}
                   </span>
                   <span class='border-[0.5px] border-gray-800 py-2 w-full rounded-xl bg-[#121212]'>
                     {partner.location}
@@ -105,17 +109,18 @@ import i18next from 'i18next'
                   <p class='mt-5 text-lg font-bold'>
                     {i18next.language === 'es'
                       ? partner.subtitle
-                      : partner.subtitle_en}
+                      : (i18next.language === 'fr' ? partner.subtitle_fr : partner.subtitle_en)}
                   </p>
                   <p class='mt-5'>
                     {i18next.language === 'es'
                       ? partner.description
-                      : partner.description_en}
+                      : (i18next.language === 'fr' ? partner.description_fr : partner.description_en)}
                   </p>
                 </div>
                 <div class='mt-5 flex justify-center items-center gap-5 text-center'>
                   <span class='border-[0.5px] border-gray-800 py-2 w-full rounded-xl bg-[#121212]'>
-                    {i18next.language === 'es' ? partner.date : partner.date_en}
+                    {i18next.language === 'es' ? partner.date : 
+                      (i18next.language === 'fr' ? partner.date_fr : partner.date_en)}
                   </span>
                   <span class='border-[0.5px] border-gray-800 py-2 w-full rounded-xl bg-[#121212]'>
                     {partner.location}

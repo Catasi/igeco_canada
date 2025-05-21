@@ -1,11 +1,12 @@
 ---
 import { MarqueeReact } from "../components/MarqueeReact";
 import { buyers1, buyers2, buyers3, buyers4 } from "../data/constanst_buyers";
+import {t} from "i18next";
 ---
 
 <section class="container mx-auto px-4">
   <p class="text-center text-5xl font-bold text-[#355282] m-8">
-    Our Professional Buyers
+    {t("home.title_4")}
   </p>
 
   <MarqueeReact images={buyers1} client:only="react" />
