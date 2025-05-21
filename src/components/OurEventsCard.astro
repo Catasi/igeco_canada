@@ -1,16 +1,20 @@
 ---
 import i18next from "i18next";
-import { events } from "../data/InternationalEvents.js";
+import { events } from "../data/constants_ourEvents.js";
 
 const currentLanguage = i18next.language;
+const base = i18next.language === 'es' ? '' :  `/en`
+
 ---
 
 <section>
     {events.map(event => (
         <a href={event.link} target="_blank" class="tarjeta-link">
-            <div class="tarjeta">               
-                <img src={event.image} alt={event.title} width="100%" />                
-                <div class="contenido">
+            <div class="tarjeta">
+                <div class="w-auto h-1/2 overflow-hidden relative">
+                    <img src={event.image} alt={event.title}  class="w-full h-full object-cover" />
+                </div>                              
+                <div class="contenido h-1/2">
                     {currentLanguage === 'es' ? (
                         <>
                         <h3>{event.title}</h3>
@@ -72,9 +76,13 @@ const currentLanguage = i18next.language;
 		flex-wrap: wrap;
 		justify-content: center;
         border-radius: 15px;
-        background-color: aliceblue;
-        margin-top: 0;
 	}
+
+    h3 {
+        font-size: 1.1rem;
+        font-weight: bold;
+        padding-bottom: 10px;
+    }
 
     .tarjeta-link {
 		display: inline-block;
@@ -113,6 +121,7 @@ const currentLanguage = i18next.language;
 		padding-left: 2rem;
 		padding-right: 2rem;
 		padding-bottom: 1rem;
+        padding-top: 1rem;
 		text-align: center;
 	}
 

@@ -8,7 +8,7 @@ changeLanguage("es");
 
 <Layout>
 	<main>
-		<h2>{t("titles.title1")}</h2>
+		<!-- <h2>{t("titles.title1")}</h2> -->
 		<a
 			href="https://electricity-transformation.ca/register/"
 			target="_blank"
@@ -20,7 +20,15 @@ changeLanguage("es");
 				<p>{t("home.register")}</p>
 			</div>
 		</a>
-		<h2>{t("titles.title2")}</h2>
+		<div class="grid md:grid-cols-2 gap-10 py-10 text-justify">
+			<div>
+				<span set:html={t("home.description_1")} />
+			</div>
+			<div>
+				<span set:html={t("home.description_2")} />
+			</div>
+		</div>
+		<h2>Our Events</h2>
 		<EventsCard />
 	</main>
 </Layout>
@@ -61,7 +69,7 @@ changeLanguage("es");
 		font-size: 250%;
 		font-family: sans-serif;
 		font-weight: bold;
-		display: flex;
+		text-align: center;;
 		margin-bottom: 1%;
 		border-bottom: solid #355282 3px;
 		color: #355282;
