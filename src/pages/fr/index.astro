@@ -1,7 +1,9 @@
 ---
 import i18next, { t, changeLanguage } from "i18next";
 import Layout from "../../layouts/Layout.astro";
-import EventsCard from "../../components/EventsCard.astro";
+import EventsCard from "../../components/OurEventsCard.astro";
+import Events from "../../components/Events.astro";
+import { events } from "../../data/constans_events";
 
 changeLanguage("fr");
 ---
@@ -20,7 +22,7 @@ changeLanguage("fr");
 				<p>{t("home.register")}</p>
 			</div>
 		</a>
-		<div class="grid md:grid-cols-2 gap-10 py-10 text-justify">
+		<div class="mx-[5rem] grid md:grid-cols-2 gap-10 py-10 text-justify">
 			<div>
 				<span set:html={t("home.description_1")} />
 			</div>
@@ -28,15 +30,14 @@ changeLanguage("fr");
 				<span set:html={t("home.description_2")} />
 			</div>
 		</div>
-		<h2>Our Events</h2>
+		<h2>{t("home.title_2")}</h2>
 		<EventsCard />
+		<h2>{t("home.title_3")}</h2>
+		<Events events={events} isLeftToRight={true}/>
 	</main>
 </Layout>
 
 <style>
-	main {
-		margin: 5rem;
-	}
 	main > a {
 		text-decoration: none;
 		color: inherit;

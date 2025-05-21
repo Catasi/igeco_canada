@@ -5,7 +5,7 @@ const events = [
     width: 250,
     alt: "AMOF",
     link: "https://amofexpo.igeco.mx/",
-    title: "AMERICAS’ MOBILITY OF THE FUTURE",
+    title: "AMERICAS' MOBILITY OF THE FUTURE",
     subtitle: "La feria de la movilidad del futuro",
     subtitle_en: "The future mobility fair",
     description:
@@ -123,7 +123,7 @@ const events = [
     logo: "/img/more-events/logokey.webp",
     width: 350,
     alt: "AGRITECHNICA",
-    link: "https://www.agritechnica.com/en/",
+    link: "https://en.key-expo.com",
     title: "The Energy Transition Expo ",
     subtitle: "El futuro de la energía se reúne en KEY",
     subtitle_en: "The future of energy meets at KEY",
@@ -151,6 +151,42 @@ const events = [
     date: "Noviembre, 2025",
     date_en: "November, 2025",
     location: "CDMX",
+  },
+  {
+    src: "/img/more-events/",
+    logo: "/img/more-events/ligna_logo.png",
+    width: 350,
+    alt: "LIGNA",
+    link: "https://www.ligna.de/en/",
+    title: "LIGNA",
+    subtitle: "La feria líder mundial para la industria de la madera",
+    subtitle_en: "The world's leading trade fair for the woodworking industry",
+    description:
+      "Presenta soluciones completas para los sectores primario y secundario, incluyendo herramientas, maquinaria y sistemas para la producción a medida y en masa, tecnologías de superficie y producción de paneles.",
+    description_en:
+      "It showcases comprehensive solutions for both primary and secondary sectors, including tools, machinery, and systems for both custom and mass production, surface technologies, and panel production.",
+    date: "Mayo, 2025",
+    date_en: "May, 2025",
+    location: "Germany",
+  },
+  {
+    src: "/img/more-events/",
+    logo: "/img/more-events/vofavicon.png",
+    width: 350,
+    alt: "VICENZAORO",
+    link: "https://www.vicenzaoro.com/en",
+    title: "VICENZAORO",
+    subtitle:
+      "La mayor feria europea para la industria del oro y de la joyería",
+    subtitle_en:
+      "Europe's largest trade fair for the gold and jewelry industry",
+    description:
+      "Un verdadero centro de negocios, que reúne a los actores más influyentes del sector mundial de la joyería.",
+    description_en:
+      "A true business hub, bringing together the most influential players from across the global jewelry sector.",
+    date: "Septiembre, 2025",
+    date_en: "September, 2025",
+    location: "Italy",
   },
 ];
 
