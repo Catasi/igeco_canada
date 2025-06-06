@@ -1,5 +1,3 @@
-import { date } from "astro:schema";
-
 const events = [
   {
     src: "/img/more-events/amof_event_bg.webp",
@@ -191,7 +189,7 @@ const events = [
     location: "CDMX",
   },
   {
-    src: "/img/more-events/ligna_event_bg.png",
+    src: "/img/more-events/ligna_event_bg.webp",
     logo: "/img/more-events/ligna_logo.png",
     width: 150,
     alt: "LIGNA",
@@ -212,7 +210,7 @@ const events = [
     location: "Germany",
   },
   {
-    src: "/img/more-events/vicenzaoro_event_bg.png",
+    src: "/img/more-events/vicenzaoro_event_bg.webp",
     logo: "/img/more-events/vofavicon.png",
     width: 300,
     alt: "VICENZAORO",

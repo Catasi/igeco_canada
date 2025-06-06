@@ -23,12 +23,14 @@ const base = i18next.language === 'en' ? '' : `/${lang}`
         style='border:0;'
         allowfullscreen=''
         loading='lazy'
+        title="IGECO Canada"
         referrerpolicy='no-referrer-when-downgrade'
       >
       </iframe>
     </div>
   </div>
-  <h4>{t('footer.title-copyright')}</h4>
+
+  <p class="border-b-[1px] border-t-[1px] border-solid border-black p-4">{t('footer.title-copyright')}</p>
   <!-- <nav>
             <a href="{`${base}/privacy-policy`}">{t("footer.nav1")}</a>
             |  
@@ -73,11 +75,7 @@ const base = i18next.language === 'en' ? '' : `/${lang}`
     color: var(--primary-color);
   }
 
-  h4 {
-    border-bottom: 1px solid black;
-    border-top: 1px solid black;
-    padding: 1rem;
-  }
+ 
 
   @media screen and (max-width: 768px) {
     footer {
