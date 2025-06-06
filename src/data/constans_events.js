@@ -31,14 +31,14 @@ const events = [
     subtitle_en: "AI in industry",
     subtitle_fr: "L'IA dans l'industrie",
     description:
-      "En HANNOVER MESSE 2025, podrás experimentar tecnologías de vanguardia en vivo: desde robots autónomos hasta IA generativa. Descubre cómo la IA está transformando la industria y estableciendo nuevos estándares.",
+      "HANNOVER MESSE es el evento más importante de la industria internacional y de la única feria de transformación industrial. Se unen los sectores principales de la industria en un solo lugar: desde ingeniería de conducción, automatización, energía, R&D y tecnología industrial hasta subcontratación. Este es el lugar donde los exhibidores cruzan los límites de la tecnología y la industria.",
     description_en:
-      "At HANNOVER MESSE 2025, you can experience cutting-edge technologies live: from autonomous robots to generative AI. Discover how AI is transforming industry and setting new standards.",
+      "HANNOVER MESSE is the most important international platform and hot spot for industrial transformation. It brings the core industrial sectors together at one location - from drive engineering, automation, energy, R&D and industrial IT to subcontracting. This is the place where exhibitors cross the boundaries of technology and industry. ",
     description_fr:
-      "À HANNOVER MESSE 2025, vous pouvez expérimenter les technologies de pointe en direct : des robots autonomes jusqu'à l'IA générative. Découvrez comment l'IA transforme l'industrie et définit de nouveaux standards.",
-    date: "Abril, 2026",
-    date_en: "April, 2026",
-    date_fr: "Avril, 2026",
+      "HANNOVER MESSE est l'événement le plus important de l'industrie internationale et de la seule ferme de transformation industrielle. Il rassemble les principaux secteurs de l'industrie en un seul lieu : de l'ingénierie de conduite, de l'automatisation, de l'énergie, de la recherche et de l'informatique industrielle jusqu'à la sous-traitance. C'est le lieu où les exposants traversent les limites de la technologie et de l'industrie.",
+    date: "20 - 24 de Abril, 2026",
+    date_en: "April 20-24, 2026",
+    date_fr: "20 - 24 d'Avril, 2026",
     location: "Germany",
   },
   {
@@ -204,9 +204,9 @@ const events = [
       "It showcases comprehensive solutions for both primary and secondary sectors, including tools, machinery, and systems for both custom and mass production, surface technologies, and panel production.",
     description_fr:
       "Il présente des solutions complètes pour les secteurs primaires et secondaires, y compris des outils, de la machinerie et des systèmes pour la production à la vitesse et en masse, des technologies de surface et de la production de panneaux.",
-    date: "Mayo, 2025",
-    date_en: "May, 2025",
-    date_fr: "Mai, 2025",
+    date: "Junio, 2025",
+    date_en: "June, 2025",
+    date_fr: "Juin, 2025",
     location: "Germany",
   },
   {

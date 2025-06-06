@@ -27,7 +27,7 @@ export const events = [
     link: "https://industrialtransformation.mx/en",
   },
   {
-    title: "America's Mobility of the Future",
+    title: "AMERICA's Mobility of the Future",
     description_es: "Foro y Cumbre, impulsando el futuro de la movilidad",
     description_en: "Foro & Summit, driving the future of mobility",
     description_fr: "Foro & Summit, moteur de l'avenir de la mobilité.",
@@ -51,7 +51,7 @@ export const events = [
     link: "https://drone.igeco.mx/en",
   },
   {
-    title: "RE+ Península de Yucatán",
+    title: "RE+ PENÍNSULA DE YUCATÁN",
     description_es:
       "El primer congreso especializado para la aceleración de las energías renovables en el sur de México",
     description_en:
@@ -81,7 +81,7 @@ export const events = [
     link: "https://re-plus-mexico.com.mx/en",
   },
   {
-    title: "ECOMONDO MÉXICO",
+    title: "ECOMONDO MEXICO",
     description_es:
       "La feria de tecnologías ambientales y economía circular para América Latina",
     description_en:
