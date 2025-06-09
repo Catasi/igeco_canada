@@ -9,24 +9,21 @@ changeLanguage("fr");
     <main>
         <i>{t("about-us.bussiness")}</i>
         <h1>{t("about-us.title")}</h1>
-        <p>{t("about-us.p1")}</p>
-        <p>{t("about-us.p2")}</p>
-        <p>{t("about-us.p3")}</p>
-        <p>{t("about-us.p4")}</p>
+        <p class="text-[20px]">{t("about-us.p1")}</p>
     </main>
-    <section class="grid grid-cols-[repeat(auto-fit,_minmax(150px,_1fr))] justify-center gap-10 p-10">
+    <section class="grid grid-cols-[repeat(auto-fit,_minmax(150px,_1fr))] justify-center gap-20 pl-40 pr-40">
         <div class="person">
-            <img src="/img/about-us/BERND-ICON.webp" alt="Director General Hannover Fairs México"/>
+            <img src="/img/about-us/BERND-ICON.webp" alt="Director General Hannover Fairs México" class="rounded-full shadow-lg"/>
             <strong>Bernd Rohde</strong>
             <p class="text-center">{t("about-us.person1")}</p>
         </div>
         <div class="person">
-            <img src="/img/about-us/manuelferreira.webp" alt="CFO IGECO Mexico and Canada" />
+            <img src="/img/about-us/manuelferreira.webp" alt="CFO IGECO Mexico and Canada" class="rounded-full shadow-lg" />
             <strong>Manuel Ferreira</strong>
             <p class="text-center">{t("about-us.person2")}</p>
         </div>
         <div class="person">
-            <img src="/img/about-us/rafael-ogazon.jpg" alt="Finance Deputy Director IGECO Canada " />
+            <img src="/img/about-us/rafael-ogazon.jpg" alt="Finance Deputy Director IGECO Canada" class="rounded-full shadow-lg" />
             <strong>Rafael Ogazón</strong>
             <p class="text-center">{t("about-us.person2")}</p>
         </div>
@@ -35,16 +32,15 @@ changeLanguage("fr");
 
 <style>
     main {
-        margin-top: 3rem;
-        padding: 3rem 6rem 2rem 6rem;
+        padding: 3rem 7rem 2rem 7rem;
         text-align: justify;
-        background-color: #f8f9fa;
+        /* background-color: #f8f9fa; */
     }
 
     h1 {
         margin-top: 0;
         margin-bottom: .5rem;
-        font-size: 40px;
+        font-size: 50px;
     }
 
     p {
@@ -59,10 +55,11 @@ changeLanguage("fr");
     }
 
     .person img {
-        width: 300px;
-        height: 300px;
+        width: 225px;
+        height: 225px;
         border-radius: 50%;
         margin-right: 1rem;
+        margin-bottom: 1rem;
     }
 
     @media(min-width: 768px) {
