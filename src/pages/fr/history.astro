@@ -7,7 +7,7 @@ changeLanguage("fr");
 
 <Layout>
     <section>
-        <div class="row">
+        <!-- <div class="row">
             <div class="col-md-4">
                 <img src="/img/history/Hannover-Messe-2023.jpeg" alt="Hannover Messe 2023" width="100%" />
             </div>
@@ -19,6 +19,13 @@ changeLanguage("fr");
             </div>
         </div>
         <p class="mt-5">{t("history.p3")}</p><br>
+        <p>{t("history.p4")}</p><br>
+        <p>{t("history.p5")}</p><br> -->
+        <i>{t("about-us.bussiness")}</i>
+        <h1>{t("history.title")}</h1>
+        <p set:html={t("history.p1")}></p><br>
+        <p>{t("history.p2")}</p><br>
+        <p>{t("history.p3")}</p><br>
         <p>{t("history.p4")}</p><br>
         <p>{t("history.p5")}</p><br>
         <div class="row-2">
@@ -33,7 +40,7 @@ changeLanguage("fr");
                         </figure>
                     </div>
                     <div class="col px-2">
-                        <p>{t("history.p6")}</p>
+                        <p set:html={t("history.p6")}></p>
                     </div>
                 </div>
             </div>
@@ -45,8 +52,7 @@ changeLanguage("fr");
                         <img src="/img/history/event1.webp" alt="Hannover Messe" width="100%" class="cover-img" />
                     </div>
                     <div class="col px-2">
-                        <p>{t("history.p7")}</p><br>
-                        <p>{t("history.p8")}</p>
+                        <p set:html={t("history.p7")}></p>
                     </div>
                 </div>
             </div>
@@ -66,11 +72,14 @@ changeLanguage("fr");
         font-weight: 400;
         line-height: 1.5;
     }
+    p {
+        font-size: 18px;;
+    }
 
     h1 {
         margin-top: 0;
         margin-bottom: .5rem;
-        font-size: 40px;
+        font-size: 50px;
     }
 
     h2, h3 {
