@@ -23,7 +23,7 @@ export const events = [
     date_en: "November 11-13, 2025",
     date_fr: "Du 11 au 13 novembre 2025",
     location: "Centro Banamex, CDMX",
-    image: "/img/our-events/Logo_ITM.jpg",
+    image: "/img/our-events/Logo_ITM.webp",
     link: "https://industrialtransformation.mx/en",
   },
   {
@@ -35,7 +35,7 @@ export const events = [
     date_en: "November 11-13, 2025",
     date_fr: "Du 11 au 13 novembre 2025",
     location: "Centro Banamex, CDMX",
-    image: "/img/our-events/amof2025logo.png",
+    image: "/img/our-events/amof2025logo.webp",
     link: "https://amofexpo.igeco.mx/en",
   },
   {
@@ -47,7 +47,7 @@ export const events = [
     date_en: "November 11-13, 2025",
     date_fr: "Du 11 au 13 novembre 2025",
     location: "Centro Banamex, CDMX",
-    image: "/img/our-events/drones.png",
+    image: "/img/our-events/drones.webp",
     link: "https://drone.igeco.mx/en",
   },
   {
@@ -77,7 +77,7 @@ export const events = [
     date_en: "April 14-16, 2026",
     date_fr: "Du 14 au 16 avril 2026",
     location: "Expo Guadalajara, Guadalajara",
-    image: "/img/our-events/replus2026.png",
+    image: "/img/our-events/replus2026.webp",
     link: "https://re-plus-mexico.com.mx/en",
   },
   {
@@ -92,7 +92,7 @@ export const events = [
     date_en: "April 14-16, 2026",
     date_fr: "Du 14 au 16 avril 2026",
     location: "Expo Guadalajara, Guadalajara",
-    image: "/img/our-events/ecomondo2026.png",
+    image: "/img/our-events/ecomondo2026.webp",
     link: "https://ecomondomexico.com.mx/en",
   },
 ];
