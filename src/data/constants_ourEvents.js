@@ -13,7 +13,50 @@ export const events = [
     location: "Enercare Centre, Toronto, Ontario",
     image: "/img/our-events/elec_transf_canada.webp",
     link: "https://electricity-transformation.ca",
+  },     
+  {
+    title: "RE+ MÉXICO",
+    description_es:
+      "El evento líder de energía renovable y almacenamiento para México y América del Norte",
+    description_en:
+      "The leading renewable energy and storage event for Mexico and North America",
+    description_fr:
+      "Le principal événement sur les énergies renouvelables et le stockage pour le Mexique et l'Amérique du Nord",
+    date_es: "14 al 16 de Abril de 2026",
+    date_en: "April 14-16, 2026",
+    date_fr: "Du 14 au 16 avril 2026",
+    location: "Expo Guadalajara, Guadalajara",
+    image: "/img/our-events/replus2026.webp",
+    link: "https://re-plus-mexico.com.mx/en",
   },
+  {
+    title: "ECOMONDO MEXICO",
+    description_es:
+      "La feria de tecnologías ambientales y economía circular para América Latina",
+    description_en:
+      "The environmental technology and circular economy trade show for Latin America",
+    description_fr:
+      "La plateforme de technologie environnementale et économie circulaire pour l'Amérique Latine",
+    date_es: "14 al 16 de Abril de 2026",
+    date_en: "April 14-16, 2026",
+    date_fr: "Du 14 au 16 avril 2026",
+    location: "Expo Guadalajara, Guadalajara",
+    image: "/img/our-events/ecomondo2026.webp",
+    link: "https://ecomondomexico.com.mx/en",
+  },
+  {
+    title: "Smart Technology Expo",
+    description_es: "Marca un hito en la Industria 4.0 en México",
+    description_en: "Marks a milestone in Industry 4.0 in Mexico",
+    description_fr: "Marque une étape importante dans l'industrie 4.0 au Mexique",
+    date_es: "18 al 20 de noviembre, 2026",
+    date_en: "November 18-20, 2026",
+    date_fr: "Du 18 au 20 novembre 2026",
+    location: "Expo Guadalajara, Guadalajara",
+    image: "/img/ste_logo.webp",
+    link: "https://smarttechnologyexpo.mx/",    
+  },
+  /*
   {
     title: "Industrial Transformation Mexico",
     description_es: "La Feria de Hannover para las Américas",
@@ -64,35 +107,5 @@ export const events = [
     location: "CIC Yucatan, Merida",
     image: "/img/our-events/repluspdy.webp",
     link: "https://www.re-plus-yucatan.igeco.mx/en",
-  },
-  {
-    title: "RE+ MÉXICO",
-    description_es:
-      "El evento líder de energía renovable y almacenamiento para México y América del Norte",
-    description_en:
-      "The leading renewable energy and storage event for Mexico and North America",
-    description_fr:
-      "Le principal événement sur les énergies renouvelables et le stockage pour le Mexique et l'Amérique du Nord",
-    date_es: "14 al 16 de Abril de 2026",
-    date_en: "April 14-16, 2026",
-    date_fr: "Du 14 au 16 avril 2026",
-    location: "Expo Guadalajara, Guadalajara",
-    image: "/img/our-events/replus2026.webp",
-    link: "https://re-plus-mexico.com.mx/en",
-  },
-  {
-    title: "ECOMONDO MEXICO",
-    description_es:
-      "La feria de tecnologías ambientales y economía circular para América Latina",
-    description_en:
-      "The environmental technology and circular economy trade show for Latin America",
-    description_fr:
-      "La plateforme de technologie environnementale et économie circulaire pour l'Amérique Latine",
-    date_es: "14 al 16 de Abril de 2026",
-    date_en: "April 14-16, 2026",
-    date_fr: "Du 14 au 16 avril 2026",
-    location: "Expo Guadalajara, Guadalajara",
-    image: "/img/our-events/ecomondo2026.webp",
-    link: "https://ecomondomexico.com.mx/en",
-  },
+  },*/
 ];
